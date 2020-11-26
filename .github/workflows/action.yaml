@@ -42,7 +42,7 @@ jobs:
 
           # Adding graphs
           echo "## Correlation Matrix" >> reports.md
-          cml-publish ./out/fit_summary.png --md >> reports.md
+          cml-publish ./out/corr_matrix.png --md >> reports.md
 
           # Send the report!
           cml-send-comment reports.md
