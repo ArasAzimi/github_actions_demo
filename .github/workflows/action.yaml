@@ -23,3 +23,24 @@ jobs:
         run: |
           # Run main
           python main.py
+  cml_build:
+    runs-on: [ubuntu-latest]
+        container: docker://dvcorg/cml-py3:latest
+        steps:
+          - uses: actions/checkout@v2
+          - name: Regression on Tesla stock
+            run: |
+              pip install -r requirements.txt
+              # Run main
+              python main.py
+
+              # Add text
+              echo "## Fi Summary" > reports.md
+              cat ./out/fit_summary.txt >> reports.md
+
+              # Adding graphs
+              echo "## Correlation Matrix" >> reports.md
+              cml-publish ./out/corr_matrix.png.png --md >> reports.md
+
+              # Send the report!
+              cml-send-comment reports.md
