@@ -13,7 +13,7 @@ jobs:
               python main.py
 
               # Add text
-              echo "## Fi Summary" > reports.md
+              echo "## Fit Summary" > reports.md
               cat ./out/fit_summary.txt >> reports.md
 
               # Adding graphs
