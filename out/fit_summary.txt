@@ -1,0 +1,27 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          tesla_returns   R-squared:                       0.046
+Model:                            OLS   Adj. R-squared:                  0.035
+Method:                 Least Squares   F-statistic:                     4.017
+Date:                Wed, 25 Nov 2020   Prob (F-statistic):            0.00813
+Time:                        16:32:12   Log-Likelihood:                -137.54
+No. Observations:                 253   AIC:                             283.1
+Df Residuals:                     249   BIC:                             297.2
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          0.0530      0.027      1.939      0.054      -0.001       0.107
+x1             0.0046      0.018      0.250      0.803      -0.032       0.041
+x2             0.1370      0.055      2.509      0.013       0.029       0.244
+x3             0.1017      0.056      1.802      0.073      -0.009       0.213
+==============================================================================
+Omnibus:                      169.660   Durbin-Watson:                   2.385
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             2630.634
+Skew:                           2.388   Prob(JB):                         0.00
+Kurtosis:                      18.058   Cond. No.                         3.43
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
