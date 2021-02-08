@@ -8,9 +8,10 @@ A sample project to show github actions in action
 ├── data             # Input CSV data
 ├── docs             # Any documentation including environment dependecy list
 ├── main.py          # main entry point to run the program  
-├── out              # Holding outputs 
-├── requirements.txt 
+├── out              # Holding outputs
+├── requirements.txt
 ├── setup            # Holding any project setup (version)
+├── setup.py         # Holding any project setup (version)
 └── src              # Python modules
 ```  
 
@@ -20,5 +21,3 @@ There might not be no real cause-effect relationship between the chosen stocks
 
 ## Jupyter notebook
 To run jupyter notebook `jupyter notebook --browser=firefox`
-
-
